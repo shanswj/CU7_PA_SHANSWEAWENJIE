@@ -1,0 +1,13 @@
+INFO:     Started server process [13264]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:5177 (Press CTRL+C to quit)
+INFO:     127.0.0.1:51122 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51123 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50482 - "POST /invocations HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50483 - "POST /invocations HTTP/1.1" 200 OK
+2026/10/20 11:17:30 WARNING mlflow.pyfunc.scoring_server: If using `instances` as input key, we internally convert the data type from `records` (List[Dict]) type to `list` (Dict[str, List]) type if the data is a pandas dataframe representation. This might cause schema changes. Please use `inputs` to avoid this conversion.
+
+INFO:     127.0.0.1:50484 - "POST /invocations HTTP/1.1" 400 Bad Request
+INFO:     127.0.0.1:51757 - "GET / HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:51757 - "GET /favicon.ico HTTP/1.1" 404 Not Found
