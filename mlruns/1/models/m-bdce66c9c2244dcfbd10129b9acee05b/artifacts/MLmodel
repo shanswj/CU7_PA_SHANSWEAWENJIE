@@ -1,0 +1,39 @@
+artifact_path: file:C:/Users/kille/Examination/mlruns/1/models/m-bdce66c9c2244dcfbd10129b9acee05b/artifacts
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.13.9
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.7.2
+    skops_trusted_types: null
+is_signature_from_type_hint: false
+mlflow_version: 3.16.1
+model_id: m-bdce66c9c2244dcfbd10129b9acee05b
+model_size_bytes: 3673
+model_uuid: m-bdce66c9c2244dcfbd10129b9acee05b
+prompts: null
+run_id: 71a36b3994514cd0bf0e91ea779ad5bd
+saved_input_example_info:
+  artifact_path: input_example.json
+  pandas_orient: split
+  serving_input_path: serving_input_example.json
+  type: dataframe
+signature:
+  inputs: '[{"type": "string", "name": "plan", "required": true}, {"type": "double",
+    "name": "avg_hours_week", "required": true}, {"type": "double", "name": "monthly_fee_rm",
+    "required": true}, {"type": "string", "name": "contract", "required": true}, {"type":
+    "string", "name": "payment_method", "required": true}, {"type": "string", "name":
+    "main_device", "required": true}, {"type": "long", "name": "support_calls", "required":
+    true}, {"type": "long", "name": "tenure_months", "required": true}]'
+  outputs: '[{"type": "long", "required": true}]'
+  params: null
+type_hint_from_example: false
+utc_time_created: '2026-10-20 02:37:04.180165'
